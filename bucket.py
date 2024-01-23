@@ -8,6 +8,9 @@ def list_buckets():
     buckets = s3.list_buckets()['Buckets']
     print(buckets)
 
+list_buckets()
+
+"""
 # create new bucket
 def create_bucket(bucket_name, region="us-east-2"):
     s3.create_bucket(
@@ -16,3 +19,4 @@ def create_bucket(bucket_name, region="us-east-2"):
     )
 
 create_bucket('watolink-bucket-2')
+"""
